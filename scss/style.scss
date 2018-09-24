@@ -1,0 +1,170 @@
+$primary-font: Raleway, sans-serif;
+$primary-font-weight: 300;
+$heading-font-weight: 400;
+$brand-color: #1abc9c;
+$brand-primary-text-color: #333;
+$brand-secondary-text-color: #ecf0f1;
+$brand-normal-color: #555;
+$remove-bg: #e74c3c;
+$up-bg: #2ecc71;
+$national-padding: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 1.6rem;
+  color: $brand-normal-color;
+  font-weight: $primary-font-weight;
+}
+
+h1,
+h2 {
+  font-weight: $heading-font-weight;
+}
+
+/******************************************
+header
+******************************************/
+header {
+  background-color: $brand-color;
+  color: $brand-secondary-text-color;
+  padding: $national-padding 0;
+}
+
+/******************************************
+main
+******************************************/
+main {
+  padding: $national-padding 0;
+  min-height: calc(100vh - 62px - 83px);
+}
+
+/*todo and button*/
+
+.generateToDo {
+  margin-top: 2rem;
+}
+
+.generateToDo input[type=text] {
+  margin-right: 1.4rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.generateToDo input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+button:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.add {
+  background-color: $brand-color;
+  color: $brand-secondary-text-color;
+  border: none;
+}
+
+/*list and buttons*/
+.list {
+  margin-top: 2rem;
+}
+
+.toDoList {
+  list-style-position: inside;
+}
+
+.toDoList li {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.toDoList li .btn {
+  padding: 0 1.5rem;
+  position: relative;
+  top: -3px;
+  border: none;
+  margin-left: 5px;
+}
+
+.remove {
+  background-color: $remove-bg;
+  color: $brand-secondary-text-color;
+}
+
+.up {
+  background-color: $up-bg;
+  color: $brand-secondary-text-color;
+}
+
+.down {
+  background-color: $up-bg;
+  color: $brand-secondary-text-color;
+}
+
+/******************************************
+footer
+******************************************/
+
+footer {
+  background-color: $brand-color;
+  color: $brand-secondary-text-color;
+  padding: $national-padding 0;
+}
+
+@media (max-width: 374px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .toDoList li .btn {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {  
+    width: 80%;
+    max-width: 1200px;
+  }
+  body {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif; }
+
+html {
+  font-size: 10px; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+body {
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: 300; }
+
+h1,
+h2 {
+  font-weight: 400; }
+
+/******************************************
+header
+******************************************/
+header {
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  padding: 20px 0; }
+
+/******************************************
+main
+******************************************/
+main {
+  padding: 20px 0;
+  min-height: calc(100vh - 62px - 83px); }
+
+/*todo and button*/
+.generateToDo {
+  margin-top: 2rem; }
+
+.generateToDo input[type=text] {
+  margin-right: 1.4rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.generateToDo input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+button {
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+button:focus {
+  outline: none; }
+
+button:active {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.add {
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  border: none; }
+
+/*list and buttons*/
+.list {
+  margin-top: 2rem; }
+
+.toDoList {
+  list-style-position: inside; }
+
+.toDoList li {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px; }
+
+.toDoList li .btn {
+  padding: 0 1.5rem;
+  position: relative;
+  top: -3px;
+  border: none;
+  margin-left: 5px; }
+
+.remove {
+  background-color: #e74c3c;
+  color: #ecf0f1; }
+
+.up {
+  background-color: #2ecc71;
+  color: #ecf0f1; }
+
+.down {
+  background-color: #2ecc71;
+  color: #ecf0f1; }
+
+/******************************************
+footer
+******************************************/
+footer {
+  background-color: #1abc9c;
+  color: #ecf0f1;
+  padding: 20px 0; }
+
+@media (max-width: 374px) {
+  body {
+    font-size: 1.3rem; }
+
+  .toDoList li .btn {
+    display: block;
+    margin: 10px 0; } }
+@media (min-width: 769px) {
+  body {
+    font-size: 1.8rem; } }
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    max-width: 1200px; }
+
+  body {
+    font-size: 2rem; } }
+
+/*# sourceMappingURL=style.css.map */
